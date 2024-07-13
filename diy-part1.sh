@@ -12,13 +12,7 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-#echo 'src-git Small_Packages https://github.com/kenzok8/small-package.git' >> feeds.conf.default
-
-sed -i 's|src-git packages https://git.openwrt.org/feed/packages.git|src-git packages https://github.com/immortalwrt/packages.git|' feeds.conf.default
-sed -i 's|src-git luci https://git.openwrt.org/project/luci.git|src-git luci https://github.com/immortalwrt/luci.git|' feeds.conf.default
-
-cat feeds.conf.default
-
+echo 'src-git Small_Packages https://github.com/kenzok8/small-package.git' >> feeds.conf.default
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
